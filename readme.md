@@ -1,5 +1,8 @@
 # Vef2 2021, verkefni 1
 
+Kári Steinn Aðalsteinsson
+Netfang: ksa13@hi.is
+
 [Kynning í fyrirlestri](https://youtu.be/pCEHnurbuCU).
 
 Verkefnið er byggt á [hópverkefni 2 í vefforritun 1, árið 2020](https://github.com/vefforritun/vef1-2020-h2).
