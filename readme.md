@@ -1,6 +1,6 @@
 # Vef2 2021, verkefni 1
+Kári Steinn aðalsteinsson
 
-Kári Steinn Aðalsteinsson
 Netfang: ksa13@hi.is
 
 [Kynning í fyrirlestri](https://youtu.be/pCEHnurbuCU).
