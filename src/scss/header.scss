@@ -1,0 +1,25 @@
+@import './config';
+
+.header {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  text-align: center;
+
+  &__grid {
+    @include grid();
+  }
+
+  &__row {
+    @include row();
+  }
+
+  &__col {
+    @include columns(8);
+    @include offset-left(2);
+  }
+
+  &__title {
+    font-size: 3em;
+    word-wrap: break-word;
+  }
+}

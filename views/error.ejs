@@ -1,0 +1,40 @@
+<%- include('header') -%>
+
+<header>
+    <div class="header">
+        <div class="header__grid">
+            <div class="header__row">
+                <div class="header__col">
+                    <h1 class="header__title"><%= title %></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="error">
+        <div class="error__grid">
+            <div class="error__row">
+                <div class="error__col">
+                    <h2 class="error__message"><%= message%></h2>
+                </div>
+                <hr class="error__separator">
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="footer_grid">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <a class="footer__back" href="/">Til baka</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<%- include('footer') -%>

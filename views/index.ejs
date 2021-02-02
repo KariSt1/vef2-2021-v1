@@ -1,0 +1,56 @@
+<%- include('header') -%>
+
+<header>
+    <div class="header">
+        <div class="header__grid">
+            <div class="header__row">
+                <div class="header__col">
+                    <h1 class="header__title">Fræðslumyndbandaleigan</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="list">
+        <div class="list__grid">
+            <div class="list__row">
+                <% categories.forEach((category) => { %>
+                    <h2 class="list__category"><%= category.title %></h2>
+                    <% category.videos.forEach((videoID) => { %>
+                        <% let video = (videos.find((video) => video.id === videoID)) %>
+                            <div class="list__col">
+                                <a href="/<%= video.id %>" class="list-item">
+                                    <div class="list-item__thumbnail">
+                                        <img class="list-item__poster" src="<%= video.poster %>" alt="">
+                                        <span class="list-item__duration"><%= duration(video.duration) %></span>
+                                    </div>
+                                    <div class="list-item__content">
+                                        <h3 class="list-item__title"><%= video.title %></h3>
+                                        <p class="list-item__age"><%= age(video.created) %></p>
+                                    </div>
+                                </a>
+                            </div>
+                        
+                    <% }) %>
+                    <hr class="list__separator">
+                <% }) %>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="footer_grid">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <p class="footer__copyright">© Fræðslumyndbandaleigan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<%- include('footer') -%>

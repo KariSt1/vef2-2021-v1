@@ -1,0 +1,44 @@
+@import './config';
+
+.list {
+  &__grid {
+    @include grid();
+  }
+
+  &__row {
+    @include row();
+  }
+
+  &__col {
+    @include columns(12);
+
+    display: flex;
+    justify-content: flex-end;
+
+    @media (min-width: 800px) {
+      @include columns(6);
+    }
+
+    @media (min-width: 1200px) {
+      @include columns(4);
+    }
+  }
+
+  &__category {
+    @include columns(12);
+
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  &__separator {
+    background: #000;
+    border-style: none;
+    height: 1px;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    width: 80%;
+  }
+}

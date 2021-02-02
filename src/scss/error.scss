@@ -1,0 +1,33 @@
+@import './config';
+
+.error {
+  text-align: center;
+
+  &__grid {
+    @include grid();
+  }
+
+  &__row {
+    @include row();
+  }
+
+  &__col {
+    @include columns(12);
+  }
+
+  &__message {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  &__separator {
+    background: #000;
+    border-style: none;
+    height: 1px;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    width: 80%;
+  }
+}

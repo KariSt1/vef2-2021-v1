@@ -1,0 +1,29 @@
+@import './config';
+
+.footer {
+  margin-bottom: 1em;
+  margin-top: 2em;
+  text-align: center;
+
+  &__grid {
+    @include grid();
+  }
+
+  &__row {
+    @include row();
+  }
+
+  &__col {
+    @include columns(12);
+  }
+
+  &__copyright {
+    margin: auto;
+    text-align: center;
+  }
+
+  &__back {
+    color: inherit;
+    text-decoration: none;
+  }
+}

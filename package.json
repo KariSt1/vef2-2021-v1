@@ -1,0 +1,42 @@
+{
+  "name": "vef2-2021-v1",
+  "version": "1.0.0",
+  "description": "Verkefni 1 í Vefforritun 2",
+  "main": "app.js",
+  "scripts": {
+    "eslint": "eslint src/**/*.js app.js",
+    "stylelint": "stylelint ./src/scss/**/*.scss --syntax scss",
+    "sass": "node-sass --source-map-embed ./src/scss/styles.scss ./public/styles/styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch --recursive ./src/scss/styles.scss ./public/styles/styles.css",
+    "test": "concurrently npm:eslint npm:stylelint",
+    "nodemon": "nodemon app.js",
+    "dev": "concurrently npm:sass npm:sass-watch npm:nodemon",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KariSt1/vef2-2021-v1.git"
+  },
+  "author": "Kári Steinn Aðalsteinsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KariSt1/vef2-2021-v1/issues"
+  },
+  "homepage": "https://github.com/KariSt1/vef2-2021-v1#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7",
+    "stylelint": "^13.9.0",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "node-sass": "^5.0.0"
+  },
+  "type": "module"
+}
